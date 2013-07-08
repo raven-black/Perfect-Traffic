@@ -330,12 +330,13 @@ public class Main extends javax.swing.JFrame implements MouseListener {
         this.p_main.addMouseMotionListener(paint);
         System.out.println("Pressed");
         BufferedImage road = null;
-            // {
-               // road = ImageIO.read( new URL("http://www.ber-ivo-ger.lima-city.de/textures/road.png"));
-            //} catch (IOException ex) {
-               // Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-            //
-            //this.p_main.getGraphics().drawImage(road, ix, iy, p_main);
+            try {
+                road = ImageIO.read( new URL("http://www.ber-ivo-ger.lima-city.de/textures/road.png"));
+            } catch (IOException ex) {
+                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            this.p_main.getGraphics().drawImage(road, ix, iy, p_main);
     }
     @Override
     public void mouseReleased(MouseEvent e) {

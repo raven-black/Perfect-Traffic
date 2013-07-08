@@ -23,7 +23,7 @@ public class MListener implements MouseListener {
         paint.setiX(e.getX());
         paint.setiY(e.getY());
         paint.setObject(this.object);
-        Main tab =new Main();
+        GUI tab =new GUI();
         //tab.getMain().addMouseMotionListener(paint);
         System.out.println("Pressed");
     }

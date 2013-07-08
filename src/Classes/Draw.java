@@ -18,7 +18,7 @@ public class Draw implements MouseMotionListener {
     public boolean exit=false;
     private int ix,iy,ax,ay;
     private String object ="";
-    Main tab =new Main();
+    GUI tab =new GUI();
     //Graphics panel = tab.getMain().getGraphics();
     
     /**

@@ -14,9 +14,9 @@ import javax.swing.JPanel;
  *
  * @author Ivo Berger
  */
-public class GUI extends javax.swing.JFrame implements MouseListener {
+public class Main extends javax.swing.JFrame implements MouseListener {
 
-    public GUI() {
+    public Main() {
         initComponents();
     }
     
@@ -208,13 +208,13 @@ public class GUI extends javax.swing.JFrame implements MouseListener {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }*/
         //</editor-fold>
 
@@ -222,7 +222,7 @@ public class GUI extends javax.swing.JFrame implements MouseListener {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new GUI().setVisible(true);
+                new Main().setVisible(true);
             }
         });
     }
@@ -254,7 +254,7 @@ public class GUI extends javax.swing.JFrame implements MouseListener {
             // {
                // road = ImageIO.read( new URL("http://www.ber-ivo-ger.lima-city.de/textures/road.png"));
             //} catch (IOException ex) {
-               // Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+               // Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
             //
             //this.p_main.getGraphics().drawImage(road, ix, iy, p_main);
     }

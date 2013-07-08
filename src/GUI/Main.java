@@ -315,11 +315,11 @@ public class Main extends javax.swing.JFrame implements MouseListener {
     private javax.swing.JPanel p_main;
     private javax.swing.JTabbedPane tp_main;
     // End of variables declaration//GEN-END:variables
-    //sdhduz
+    //sdhduzGGGGGGG
     @Override
     public void mouseClicked(MouseEvent me) {
         
-    }    
+    }
     @Override
     public void mousePressed(MouseEvent e) {
         paint = new IDraw(this.p_main.getGraphics());

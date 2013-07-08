@@ -5,10 +5,7 @@ import java.awt.event.*;
 import java.awt.image.*;
 import java.io.IOException;
 import java.net.URL;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.*;
-import javax.swing.JPanel;
 import classes.*;
 
 /**
@@ -332,9 +329,7 @@ public class Main extends javax.swing.JFrame implements MouseListener {
         BufferedImage road = null;
             try {
                 road = ImageIO.read( new URL("http://www.ber-ivo-ger.lima-city.de/textures/road.png"));
-            } catch (IOException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            } catch (IOException ex) {}
             
             this.p_main.getGraphics().drawImage(road, ix, iy, p_main);
     }
